@@ -1,0 +1,18 @@
+/GNU ARM v10.2.1 - Default/autogen/
+/GNU ARM v10.2.1 - Default/gecko_sdk_3.2.3/
+/GNU ARM v10.2.1 - Default/spp/
+/GNU ARM v10.2.1 - Default/user_interface/
+/GNU ARM v10.2.1 - Default/crc/
+/GNU ARM v10.2.1 - Default/logs/
+/GNU ARM v10.2.1 - Default/Display/
+/GNU ARM v10.2.1 - Default/Slip/
+/GNU ARM v10.2.1 - Default/sl_drivers/
+/GNU ARM v10.2.1 - Default/Packet/
+/GNU ARM v10.2.1 - Default/*.d
+/GNU ARM v10.2.1 - Default/*.o
+/GNU ARM v10.2.1 - Default/*.mk
+/GNU ARM v10.2.1 - Default/*.axf
+/GNU ARM v10.2.1 - Default/*.map
+/GNU ARM v10.2.1 - Default/trap.*
+
+*.bak

@@ -1,4 +1,5 @@
 #CRC Codes for initially generated config files -- do not modify!
+FreeRTOSConfig.h=-1743608456
 SEGGER_RTT_Conf.h=-2139387046
 app_assert_config.h=1351236558
 app_log_config.h=862545309
@@ -12,6 +13,7 @@ sl_bluetooth_advertiser_config.h=-173671276
 sl_bluetooth_config.h=370189584
 sl_bluetooth_connection_config.h=583283067
 sl_board_control_config.h=1709521625
+sl_bt_rtos_config.h=407237443
 sl_device_init_emu_config.h=622680131
 sl_device_init_hfrco_config.h=-274886707
 sl_device_init_hfxo_config.h=-185252975

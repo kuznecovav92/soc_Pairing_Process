@@ -32,7 +32,7 @@
 #define NOINPUTNOOUTPUT 3
 #define KEYBOARDDISPLAY 4
 
-#define IO_CAPABILITY (KEYBOARDONLY) // Choose IO capabilities.
+#define IO_CAPABILITY (DISPLAYONLY) // Choose IO capabilities.
 #define MITM_PROTECTION (0x01)      // 0=JustWorks, 1=PasskeyEntry or NumericComparison
 
 #ifndef IO_CAPABILITY

@@ -9,6 +9,8 @@
     <file name="sl_memlcd_usart_config.h" generated="true" linked="false" uri="studio:/project/config/sl_memlcd_usart_config.h"/>
     <file name="sl_simple_button_btn0_config.h" generated="true" linked="false" uri="studio:/project/config/sl_simple_button_btn0_config.h"/>
     <file name="sl_simple_button_btn1_config.h" generated="true" linked="false" uri="studio:/project/config/sl_simple_button_btn1_config.h"/>
+    <file name="sl_bt_rtos_config.h" generated="true" linked="false" uri="studio:/project/config/sl_bt_rtos_config.h"/>
+    <file name="FreeRTOSConfig.h" generated="true" linked="false" uri="studio:/project/config/FreeRTOSConfig.h"/>
     <file name="sl_bluetooth_config.h" generated="true" linked="false" uri="studio:/project/config/sl_bluetooth_config.h"/>
     <file name="sl_hfxo_manager_config.h" generated="true" linked="false" uri="studio:/project/config/sl_hfxo_manager_config.h"/>
     <file name="sl_board_control_config.h" generated="true" linked="false" uri="studio:/project/config/sl_board_control_config.h"/>

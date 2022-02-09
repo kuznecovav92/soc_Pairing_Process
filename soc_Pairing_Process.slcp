@@ -30,6 +30,7 @@ component:
 - {id: gatt_configuration}
 - instance: [led0, led1]
   id: simple_led
+- {id: freertos}
 - {id: bluetooth_stack}
 - {id: brd4180a}
 - {id: rail_util_pti}

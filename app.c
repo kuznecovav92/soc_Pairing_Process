@@ -398,6 +398,11 @@ void sl_bt_on_event(sl_bt_msg_t *evt)
                     (int)sc);
     }
     break;
+    case sl_bt_evt_system_error_id: {
+    	sl_bt_evt_system_error_t* evt_err = (sl_bt_evt_system_error_t*)(&evt->data);
+    	sl_app_log("Reason = %d\n\r", evt_err->reason);
+    	break;
+    }
     default:
       break;
     }

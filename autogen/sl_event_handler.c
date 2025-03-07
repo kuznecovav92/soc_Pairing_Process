@@ -17,6 +17,7 @@
 #include "app_log.h"
 #include "gpiointerrupt.h"
 #include "sl_iostream_init_instances.h"
+#include "sl_iostream_rtt.h"
 #include "sl_iostream_stdlib_config.h"
 #include "sl_iostream_init_usart_instances.h"
 #include "sl_mbedtls.h"
@@ -30,6 +31,7 @@
 
 void sl_iostream_init_instances(void)
 {
+  sl_iostream_rtt_init();
   sl_iostream_usart_init_instances();
 }
 

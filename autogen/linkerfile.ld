@@ -27,6 +27,7 @@
  *
  ******************************************************************************/
 
+
  MEMORY
  {
    FLASH   (rx)  : ORIGIN = 0x4000, LENGTH = 0xfa000
@@ -152,6 +153,7 @@ SECTIONS
   {
     . = ALIGN(4);
     __bss_start__ = .;
+    *(SEGGER_RTT)
     *(.bss*)
     *(COMMON)
     . = ALIGN(4);

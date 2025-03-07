@@ -32,7 +32,7 @@
 #define NOINPUTNOOUTPUT 3
 #define KEYBOARDDISPLAY 4
 
-#define IO_CAPABILITY (DISPLAYONLY) // Choose IO capabilities.
+#define IO_CAPABILITY (DISPLAYYESNO) // Choose IO capabilities.
 #define MITM_PROTECTION (0x01)      // 0=JustWorks, 1=PasskeyEntry or NumericComparison
 
 #ifndef IO_CAPABILITY
@@ -40,7 +40,7 @@
 #endif
 
 #if (IO_CAPABILITY == KEYBOARDONLY)
-#define KEYBOARD_ONLY_PASSKEY (101011)
+#define KEYBOARD_ONLY_PASSKEY (564)
 #else
 #define KEYBOARD_ONLY_PASSKEY (000001)
 #endif
@@ -102,7 +102,7 @@ static uint8_t advertising_set_handle = 0xff;
 
 static uint8_t connection = 0xFF;
 static volatile bool is_initiator = true;
-static volatile uint32_t passkey = 123456;
+static volatile uint32_t passkey = 111;
 static volatile State_t state = IDLE;
 // Globals
 static uint32_t xOffset, yOffset;
@@ -221,7 +221,7 @@ void sl_bt_on_event(sl_bt_msg_t *evt)
 #else
     //passkey = make_passkey_from_address(address);
 #endif
-    sc = sl_bt_sm_set_passkey(passkey);
+//    sc = sl_bt_sm_set_passkey(passkey);
     sl_app_assert(sc == SL_STATUS_OK,
                   "[E: 0x%04x] Failed to set using random passkeys\r\n",
                   (int)sc);
@@ -327,15 +327,15 @@ void sl_bt_on_event(sl_bt_msg_t *evt)
 
   case sl_bt_evt_sm_passkey_request_id:
     sl_app_log("Passkey request\r\n");
-//    state = PROMPT_INPUTTING_PASSKEY;
-    sc = sl_bt_sm_enter_passkey(connection, 123456);
-    sl_app_assert(sc == SL_STATUS_OK,
-                  "[E: 0x%04x] Failed to enter a passkey\n",
-                  (int)sc);
+    state = PROMPT_INPUTTING_PASSKEY;
+//    sc = sl_bt_sm_enter_passkey(connection, 45);
+//    sl_app_assert(sc == SL_STATUS_OK,
+//                  "[E: 0x%04x] Failed to enter a passkey\n",
+//                  (int)sc);
     break;
 
   case sl_bt_evt_sm_confirm_passkey_id:
-    sl_app_log("Passkey confirm\r\n");
+    sl_app_log("Passkey confirm = %d\r\n", evt->data.evt_sm_confirm_passkey.passkey);
     passkey = evt->data.evt_sm_confirm_passkey.passkey;
     state = PROMPT_YESNO;
     break;

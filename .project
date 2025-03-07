@@ -16,11 +16,18 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
+			<triggers>full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.cdt.core.cnature</nature>
 		<nature>com.silabs.ss.framework.ide.project.sls.core.SLSProjectNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
 	<linkedResources>
 		<link>
@@ -332,6 +339,11 @@
 			<name>gecko_sdk_3.2.3/platform/middleware/glib/em_types.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/middleware/glib/em_types.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_3.2.3/protocol/bluetooth/api/sl_bt.xapi</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/protocol/bluetooth/api/sl_bt.xapi</locationURI>
 		</link>
 		<link>
 			<name>gecko_sdk_3.2.3/protocol/bluetooth/inc/sl_bgapi.h</name>
@@ -759,6 +771,11 @@
 			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/inc/sl_iostream.h</locationURI>
 		</link>
 		<link>
+			<name>gecko_sdk_3.2.3/platform/service/iostream/inc/sl_iostream_rtt.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/inc/sl_iostream_rtt.h</locationURI>
+		</link>
+		<link>
 			<name>gecko_sdk_3.2.3/platform/service/iostream/inc/sl_iostream_stdlib_config.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/inc/sl_iostream_stdlib_config.h</locationURI>
@@ -787,6 +804,11 @@
 			<name>gecko_sdk_3.2.3/platform/service/iostream/src/sl_iostream_retarget_stdio.c</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/src/sl_iostream_retarget_stdio.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_3.2.3/platform/service/iostream/src/sl_iostream_rtt.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/src/sl_iostream_rtt.c</locationURI>
 		</link>
 		<link>
 			<name>gecko_sdk_3.2.3/platform/service/iostream/src/sl_iostream_stdlib_config.c</name>
@@ -1597,6 +1619,21 @@
 			<name>gecko_sdk_3.2.3/util/third_party/freertos/kernel/include/timers.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/util/third_party/freertos/kernel/include/timers.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_3.2.3/util/third_party/segger/systemview/SEGGER/SEGGER.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/segger/systemview/SEGGER/SEGGER.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_3.2.3/util/third_party/segger/systemview/SEGGER/SEGGER_RTT.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/segger/systemview/SEGGER/SEGGER_RTT.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_3.2.3/util/third_party/segger/systemview/SEGGER/SEGGER_RTT.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/segger/systemview/SEGGER/SEGGER_RTT.h</locationURI>
 		</link>
 		<link>
 			<name>gecko_sdk_3.2.3/platform/Device/SiliconLabs/EFR32MG21/Source/GCC/startup_efr32mg21.c</name>
